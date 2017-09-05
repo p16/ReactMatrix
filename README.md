@@ -71,10 +71,10 @@ The `columnDefinitions` is an array of objects, each object can have the followi
 - `fixed`: if `true` the column will be rendered as a fixed column on the left of the matrix
 - `formatter`: function to which will be passed the value to render, whatever this will return will be rendered instead
 - `classes`: function to which is passed the entire row (object) and should return the cell CSS class(es)
-- component: react component to be rendere. IT will receive the following props:
-    - value: whatever the value for the column is
-    - row: the entire object representing the row that is being rendered
-    - field: the same string given in the `columnDefinitions` for this column
+- `component`: react component to be rendered. It will receive the following props:
+    - `value`: whatever the value for the column is
+    - `row`: the entire object representing the row that is being rendered
+    - `field`: the same string given in the `columnDefinitions` for this column
 
 ## prop `classesForAllCells`
 
