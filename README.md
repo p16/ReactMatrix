@@ -68,7 +68,7 @@ The `columnDefinitions` is an array of objects, each object can have the followi
 
 - `label`: the string to be show in the table header row
 - `field`: path of the field holding the value to show
-- `fixed`: if true the column will be rendered as a fixed column on the left of the matrix
+- `fixed`: if `true` the column will be rendered as a fixed column on the left of the matrix
 - `formatter`: function to which will be passed the value to render, whatever this will return will be rendered instead
 - `classes`: function to which is passed the entire row (object) and should return the cell CSS class(es)
 - component: react component to be rendere. IT will receive the following props:
