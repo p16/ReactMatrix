@@ -1,0 +1,59 @@
+.grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.blocked {
+  display: flex;
+  flex-direction: row;
+}
+
+.blocked .column:last-child .cell {
+  border-right: 1px solid #000`
+}
+
+.column {
+  width: 150px;
+}
+
+.cell {
+  height: 25px;
+}
+
+.scrollable {
+  overflow-x: scroll;
+}
+
+.cell {
+  width: 100%;
+  border: 1px solid #ccc;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.cell span {
+  padding: 3px;
+  display: block;
+}
+
+.cell.header {
+  background-color: #F0EDEE;
+  border-bottom: 1px solid #000;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cell.header span {
+  padding: 3px;
+  overflow: hidden;
+}
+
+.cell.header .draggable-handler {
+  width: 10px;
+  height: 25px;
+  cursor: col-resize;
+  background-color: #A9A9A9;
+}

@@ -1,0 +1,46 @@
+{
+  "name": "react-matrix",
+  "version": "1.0.0",
+  "description": "Small react component to draw an exel like matrix with column resize and fixed left columns",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "webpack",
+    "lint": "eslint ./client --fix",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@bitbucket.org/fdesantis/reactmatrix.git"
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "matrix",
+    "excel"
+  ],
+  "author": "Filippo De Santis <filippo.desantis@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/fdesantis/reactmatrix#readme",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "prop-types": "^15.5.10",
+    "react": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^2.9.1",
+    "eslint": "^4.6.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.3.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "jest": "^21.0.1",
+    "react-test-renderer": "^15.6.1",
+    "webpack": "^3.5.5"
+  }
+}
