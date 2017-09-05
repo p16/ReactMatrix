@@ -73,7 +73,7 @@ The `columnDefinitions` is an array of objects, each object can have the followi
 - `classes`: function to which is passed the entire row (object) and should return the cell CSS class(es)
 - `component`: react component to be rendered, it will receive the following props:
     - `value`: whatever the value for the column is
-    - `row`: the entire object representing the row that is being rendered
+    - `row`: the object representing the row that is being rendered
     - `field`: the same string given in the `columnDefinitions` for this column
 
 ## prop `classesForAllCells`
