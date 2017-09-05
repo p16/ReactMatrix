@@ -64,7 +64,7 @@ It is an array of objects (rows) that will be displayed in the matrix
 
 ## prop `columnDefinitions`
 
-The `columnDefinitions` object can have the following properties:
+The `columnDefinitions` is an array of objects, each object can have the following properties:
 
 - `label`: the string to be show in the table header row
 - `field`: path of the field holding the value to show
