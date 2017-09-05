@@ -5,9 +5,9 @@ This component wants to be a very simple and slim implementation of a table comp
 - resizable columns
 - fixed (left) columns
 - abililty to customize what is rendered in each cell:
-  - using react components
-  - passing a formatting function
-  - passsing a function that will return which class should be applied to the cell
+    - using react components
+    - passing a formatting function
+    - passsing a function that will return which class should be applied to the cell
 
 
 # API
@@ -37,9 +37,9 @@ The `columnDefinitions` object can have the following properties:
 - `formatter`: function to which will be passed the value to render, whatever this will return will be rendered instead
 - `classes`: function to which is passed the entire row (object) and should return the cell CSS class(es)
 - component: react component to be rendere. IT will receive the following props:
-  - value: whatever the value for the column is
-  - row: the entire object representing the row that is being rendered
-  - field: the same string given in the `columnDefinitions` for this column
+    - value: whatever the value for the column is
+    - row: the entire object representing the row that is being rendered
+    - field: the same string given in the `columnDefinitions` for this column
 
 ## `classesForAllCells`
 
