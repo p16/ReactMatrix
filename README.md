@@ -41,7 +41,7 @@ function classesForAllCells (row) {
 }
 
 const columnDefinitions = [
-  { label: 'Flight', field: 'flightDetails.code', fixed: true, component: TexTCell },
+  { label: 'Flight', field: 'flightDetails.code', fixed: true, component: TextCell },
   { label: 'Date', field: 'flightDetails.date', fixed: true, component: DateCell },
   { label: 'First name', field: 'user.details.firstName', component: TextCell },
   { label: 'Last name', field: 'user.details.lastName', component: TextCell },
