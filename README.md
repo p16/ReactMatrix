@@ -7,7 +7,7 @@ This component wants to be a very simple and slim implementation of a table comp
 - abililty to customize what is rendered in each cell:
     - using react components
     - passing a formatting function
-    - passsing a function that will return which class should be applied to the cell
+    - passsing a function that will return which CSS class(es) should be applied to the cell
 
 
 # API
@@ -15,15 +15,50 @@ This component wants to be a very simple and slim implementation of a table comp
 ```
 import Matrix from 'react-matrix'
 
+const data = [
+  {
+    flightDetails: {
+      code: '...',
+      date: '...'
+    },
+    user: {
+      details: {
+        firstName: '...',
+        lastName: '...',
+      }
+    }
+    ...
+  }
+  ...
+]
+
+function classesForAllCells (row) {
+  if (row.id === 101010) {
+    return 'show-it-red'
+  }
+
+  return 'show-it-blue'
+}
+
+const columnDefinitions = [
+  { label: 'Flight', field: 'flightDetails.code', fixed: true, component: TexTCell },
+  { label: 'Date', field: 'flightDetails.date', fixed: true, component: DateCell },
+  { label: 'First name', field: 'user.details.firstName', component: TextCell },
+  { label: 'Last name', field: 'user.details.lastName', component: TextCell },
+  { label: 'Something', field: 'someField', formatter: someFormatter },
+  { label: 'DOB', field: 'birthday', component: DateCell },
+  { label: 'Age', field: 'birthday', component: AgeCell },
+]
+
 <Matrix
-  data={partecipants}
+  data={data}
   columnDefinitions={columnDefinitions}
   classesForAllCells={classesForAllCells}
 />
 
 ```
 
-## `data`
+## prop `data`
 
 It is an array of objects (rows) that will be displayed in the matrix
 
@@ -41,7 +76,7 @@ The `columnDefinitions` object can have the following properties:
     - row: the entire object representing the row that is being rendered
     - field: the same string given in the `columnDefinitions` for this column
 
-## `classesForAllCells`
+## prop `classesForAllCells`
 
 This is a function should return which CSS class(es) should be applied to all cells. It will be called for each object in `data` passing the current object.
 
