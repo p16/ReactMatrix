@@ -22,7 +22,9 @@
   "license": "MIT",
   "homepage": "https://bitbucket.org/fdesantis/reactmatrix#readme",
   "dependencies": {
-    "lodash": "^4.17.4",
+    "lodash.get": "^4.4.2",
+    "lodash.isfunction": "^3.0.8",
+    "lodash.isstring": "^4.0.1",
     "prop-types": "^15.5.10",
     "react": "^15.6.1"
   },

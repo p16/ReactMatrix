@@ -1,8 +1,17 @@
-import _ from 'lodash'
+import isString from 'lodash.isstring'
+import get from 'lodash.get'
+import isFunction from 'lodash.isfunction'
+
 import React, {Component, createElement} from 'react'
 import T from 'prop-types'
 
 import DraggableHandle from './draggable-handle'
+
+const _ = {
+  isString,
+  get,
+  isFunction
+}
 
 export default class Column extends Component {
   constructor (props) {

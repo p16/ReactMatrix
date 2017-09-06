@@ -80,3 +80,16 @@ The `columnDefinitions` is an array of objects, each object can have the followi
 
 This is a function should return which CSS class(es) should be applied to all cells. It will be called for each object in `data` passing the current object.
 
+
+# Style
+
+You can add yhe grid stile by importing
+
+```
+import 'react-matrix/css/style.css'
+```
+
+# Limitations
+
+- the header cells cannot be resized to less then 100px and more than 500px
+- fixed columns are on the left only

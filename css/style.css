@@ -1,42 +1,42 @@
-.grid {
+.react-matrix-grid {
   display: flex;
   flex-direction: row;
 }
 
-.blocked {
+.react-matrix-grid .blocked {
   display: flex;
   flex-direction: row;
 }
 
-.blocked .column:last-child .cell {
+.react-matrix-grid .blocked .column:last-child .cell {
   border-right: 1px solid #000`
 }
 
-.column {
+.react-matrix-grid .column {
   width: 150px;
 }
 
-.cell {
+.react-matrix-grid .cell {
   height: 25px;
 }
 
-.scrollable {
+.react-matrix-grid .scrollable {
   overflow-x: scroll;
 }
 
-.cell {
+.react-matrix-grid .cell {
   width: 100%;
   border: 1px solid #ccc;
   white-space: nowrap;
   overflow: hidden;
 }
 
-.cell span {
+.react-matrix-grid .cell span {
   padding: 3px;
   display: block;
 }
 
-.cell.header {
+.react-matrix-grid .cell.header {
   background-color: #F0EDEE;
   border-bottom: 1px solid #000;
   padding: 0;
@@ -46,12 +46,12 @@
   justify-content: space-between;
 }
 
-.cell.header span {
+.react-matrix-grid .cell.header span {
   padding: 3px;
   overflow: hidden;
 }
 
-.cell.header .draggable-handler {
+.react-matrix-grid .cell.header .draggable-handler {
   width: 10px;
   height: 25px;
   cursor: col-resize;

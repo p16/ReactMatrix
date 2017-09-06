@@ -12,7 +12,7 @@ export default class Matrix extends Component {
     } = this.props
 
     return (
-      <div className="grid">
+      <div className="react-matrix-grid">
         <div className="blocked">
           {columnDefinitions.filter(c => c.fixed).map(c => {
             return <Column
@@ -24,7 +24,7 @@ export default class Matrix extends Component {
           })}
         </div>
         <div className="scrollable">
-          <div className="grid">
+          <div className="react-matrix-grid">
             {columnDefinitions.filter(c => !c.fixed).map(c => {
               return <Column
                 scrollable
