@@ -83,7 +83,7 @@ This is a function should return which CSS class(es) should be applied to all ce
 
 # Style
 
-You can add yhe grid stile by importing
+You can add the grid style by importing
 
 ```javascript
 import 'react-matrix/css/style.css'
@@ -93,3 +93,4 @@ import 'react-matrix/css/style.css'
 
 - the header cells cannot be resized to less then 100px and more than 500px
 - fixed columns are on the left only
+- the matrix is rendered all at the same time
