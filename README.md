@@ -12,7 +12,7 @@ This component wants to be a very simple and slim implementation of a exel like 
 
 # API
 
-```
+```javascript
 import Matrix from 'react-matrix'
 
 const data = [
@@ -85,7 +85,7 @@ This is a function should return which CSS class(es) should be applied to all ce
 
 You can add yhe grid stile by importing
 
-```
+```javascript
 import 'react-matrix/css/style.css'
 ```
 
