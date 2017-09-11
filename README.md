@@ -1,6 +1,6 @@
 # ReactMatrix
 
-This component wants to be a very simple and slim implementation of a table component that will enable you to have:
+This component wants to be a very simple and slim implementation of a exel like table component that will enable you to have:
 
 - resizable columns
 - fixed (left) columns
