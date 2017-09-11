@@ -9,6 +9,7 @@ This component wants to be a very simple and slim implementation of a exel like 
     - passing a formatting function
     - passsing a function that will return which CSS class(es) should be applied to the cell
 
+![example](https://github.com/p16/ReactMatrix/blob/master/ezgif-4-0d78b04fe8.gif?raw=true)
 
 # API
 
