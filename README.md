@@ -92,6 +92,7 @@ import 'react-matrix/css/style.css'
 
 # Limitations
 
+- **works only on chrome**
 - the header cells cannot be resized to less then 100px and more than 500px
 - fixed columns are on the left only
 - the matrix is rendered all at the same time
